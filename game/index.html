@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Tideglass Harbor — a stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #040a12;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    max-width: 96vw;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    border: 2px solid #d8b25a;
+    border-radius: 6px;
+    background: #060d18;
+    cursor: pointer;
+  }
+  #hint {
+    color: #9fc3dd;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  #hint b { color: #ffd65a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; collect 3 manifests, then reach the boat &nbsp;·&nbsp; <b>R</b> restart</div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
